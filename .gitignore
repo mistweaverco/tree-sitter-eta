@@ -8,3 +8,5 @@
 .yarn/cache
 node_modules
 
+build
+/*.wasm
