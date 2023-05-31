@@ -448,21 +448,12 @@
       "type": "PATTERN",
       "value": "[^<>&\\s]([^<>&]*[^<>&\\s])?"
     },
-    "eta_script_start_tag": {
-      "type": "STRING",
-      "value": "<%"
-    },
     "eta_script_element": {
       "type": "SEQ",
       "members": [
         {
-          "type": "ALIAS",
-          "content": {
-            "type": "SYMBOL",
-            "name": "eta_script_start_tag"
-          },
-          "named": true,
-          "value": "start_tag"
+          "type": "STRING",
+          "value": "<%"
         },
         {
           "type": "CHOICE",
@@ -477,8 +468,8 @@
           ]
         },
         {
-          "type": "SYMBOL",
-          "name": "end_tag"
+          "type": "STRING",
+          "value": "%>"
         }
       ]
     }

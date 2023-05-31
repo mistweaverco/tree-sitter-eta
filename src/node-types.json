@@ -117,19 +117,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": true,
+      "multiple": false,
+      "required": false,
       "types": [
         {
-          "type": "end_tag",
-          "named": true
-        },
-        {
           "type": "raw_text",
-          "named": true
-        },
-        {
-          "type": "start_tag",
           "named": true
         }
       ]
@@ -241,7 +233,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "attribute",
@@ -282,6 +274,10 @@
     "named": false
   },
   {
+    "type": "%>",
+    "named": false
+  },
+  {
     "type": "'",
     "named": false
   },
@@ -295,6 +291,10 @@
   },
   {
     "type": "<!",
+    "named": false
+  },
+  {
+    "type": "<%",
     "named": false
   },
   {

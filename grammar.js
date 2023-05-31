@@ -19,17 +19,15 @@ module.exports = grammar(html, {
       $.erroneous_end_tag
     ),
 
+    eta_script_element: $ => seq(
+      '<%',
+      optional($.raw_text),
+      '%>'
+    ),
+
     element: (_, o) => o,
 
     start_tag: (_, o) => o,
-
-    eta_script_start_tag: () => '<%',
-
-    eta_script_element: $ => seq(
-      alias($.eta_script_start_tag, $.start_tag),
-      optional($.raw_text),
-      $.end_tag
-    ),
 
     script_element: (_, o) => o,
 
