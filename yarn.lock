@@ -588,7 +588,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:2.17.0, nan@npm:^2.14.0":
+"nan@npm:2.17.0":
   version: 2.17.0
   resolution: "nan@npm:2.17.0"
   dependencies:
@@ -853,19 +853,9 @@ __metadata:
     nan: 2.17.0
     node-gyp: 9.3.1
     tree-sitter-cli: 0.20.8
-    tree-sitter-html: "git@github.com:tree-sitter/tree-sitter-html.git"
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
-
-"tree-sitter-html@git@github.com:tree-sitter/tree-sitter-html.git":
-  version: 0.19.0
-  resolution: "tree-sitter-html@git@github.com:tree-sitter/tree-sitter-html.git#commit=86c253e675e7fdd1c0482efe0706f24bafbc3a7d"
-  dependencies:
-    nan: ^2.14.0
-  checksum: cc2fe1baae0230a64365fb093f35bad14c7967436fa61f22fc8869ea1595332161d5c9b8b68bc1515567de719920684cb757772bf0640e3eee1b86b1f1edc610
-  languageName: node
-  linkType: hard
 
 "typescript@npm:5.0.4":
   version: 5.0.4

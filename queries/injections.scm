@@ -1,6 +1,6 @@
 ; inherits: html
 
 ((eta_script_element
-  (raw_text) @injection.content)
+  (text) @injection.content)
  (#set! injection.language "javascript"))
 

@@ -12,8 +12,16 @@
   "devDependencies": {
     "node-gyp": "9.3.1",
     "tree-sitter-cli": "0.20.8",
-    "tree-sitter-html": "git@github.com:tree-sitter/tree-sitter-html.git",
     "typescript": "5.0.4"
   },
-  "main": "bindings/node"
+  "main": "bindings/node",
+  "tree-sitter": [
+    {
+      "scope": "text.eta",
+      "file-types": [
+        "eta"
+      ],
+      "injection-regex": "eta"
+    }
+  ]
 }
